@@ -1,0 +1,1023 @@
+Parsing Steps are the following: 
+Elements of the stack: ['$', 'P']
+Matched Input: 
+Remaining Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: P -> [['prog', 'DL', 'SL', 'end']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'DL', 'prog']
+Matched Input: 
+Remaining Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', 'DL']
+Matched Input: prog 
+Remaining Input: int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: DL -> [['D', 'DL']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'DL', 'D']
+Matched Input: prog 
+Remaining Input: int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: D -> [['TY', 'VL', ';']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'DL', ';', 'VL', 'TY']
+Matched Input: prog 
+Remaining Input: int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: TY -> [['int']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'DL', ';', 'VL', 'int']
+Matched Input: prog 
+Remaining Input: int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', 'DL', ';', 'VL']
+Matched Input: prog int 
+Remaining Input: id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: VL -> [['id', "VL'"]] 
+
+Elements of the stack: ['$', 'end', 'SL', 'DL', ';', "VL'", 'id']
+Matched Input: prog int 
+Remaining Input: id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', 'DL', ';', "VL'"]
+Matched Input: prog int id 
+Remaining Input: ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: VL' -> [['epsilon']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'DL', ';']
+Matched Input: prog int id 
+Remaining Input: ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', 'DL']
+Matched Input: prog int id ; 
+Remaining Input: int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: DL -> [['D', 'DL']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'DL', 'D']
+Matched Input: prog int id ; 
+Remaining Input: int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: D -> [['TY', 'VL', ';']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'DL', ';', 'VL', 'TY']
+Matched Input: prog int id ; 
+Remaining Input: int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: TY -> [['int']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'DL', ';', 'VL', 'int']
+Matched Input: prog int id ; 
+Remaining Input: int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', 'DL', ';', 'VL']
+Matched Input: prog int id ; int 
+Remaining Input: id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: VL -> [['id', "VL'"]] 
+
+Elements of the stack: ['$', 'end', 'SL', 'DL', ';', "VL'", 'id']
+Matched Input: prog int id ; int 
+Remaining Input: id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', 'DL', ';', "VL'"]
+Matched Input: prog int id ; int id 
+Remaining Input: ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: VL' -> [['epsilon']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'DL', ';']
+Matched Input: prog int id ; int id 
+Remaining Input: ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', 'DL']
+Matched Input: prog int id ; int id ; 
+Remaining Input: int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: DL -> [['D', 'DL']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'DL', 'D']
+Matched Input: prog int id ; int id ; 
+Remaining Input: int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: D -> [['TY', 'VL', ';']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'DL', ';', 'VL', 'TY']
+Matched Input: prog int id ; int id ; 
+Remaining Input: int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: TY -> [['int']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'DL', ';', 'VL', 'int']
+Matched Input: prog int id ; int id ; 
+Remaining Input: int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', 'DL', ';', 'VL']
+Matched Input: prog int id ; int id ; int 
+Remaining Input: id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: VL -> [['id', "VL'"]] 
+
+Elements of the stack: ['$', 'end', 'SL', 'DL', ';', "VL'", 'id']
+Matched Input: prog int id ; int id ; int 
+Remaining Input: id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', 'DL', ';', "VL'"]
+Matched Input: prog int id ; int id ; int id 
+Remaining Input: ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: VL' -> [['epsilon']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'DL', ';']
+Matched Input: prog int id ; int id ; int id 
+Remaining Input: ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', 'DL']
+Matched Input: prog int id ; int id ; int id ; 
+Remaining Input: int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: DL -> [['D', 'DL']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'DL', 'D']
+Matched Input: prog int id ; int id ; int id ; 
+Remaining Input: int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: D -> [['TY', 'VL', ';']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'DL', ';', 'VL', 'TY']
+Matched Input: prog int id ; int id ; int id ; 
+Remaining Input: int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: TY -> [['int']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'DL', ';', 'VL', 'int']
+Matched Input: prog int id ; int id ; int id ; 
+Remaining Input: int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', 'DL', ';', 'VL']
+Matched Input: prog int id ; int id ; int id ; int 
+Remaining Input: id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: VL -> [['id', "VL'"]] 
+
+Elements of the stack: ['$', 'end', 'SL', 'DL', ';', "VL'", 'id']
+Matched Input: prog int id ; int id ; int id ; int 
+Remaining Input: id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', 'DL', ';', "VL'"]
+Matched Input: prog int id ; int id ; int id ; int id 
+Remaining Input: ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: VL' -> [['epsilon']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'DL', ';']
+Matched Input: prog int id ; int id ; int id ; int id 
+Remaining Input: ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', 'DL']
+Matched Input: prog int id ; int id ; int id ; int id ; 
+Remaining Input: float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: DL -> [['D', 'DL']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'DL', 'D']
+Matched Input: prog int id ; int id ; int id ; int id ; 
+Remaining Input: float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: D -> [['TY', 'VL', ';']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'DL', ';', 'VL', 'TY']
+Matched Input: prog int id ; int id ; int id ; int id ; 
+Remaining Input: float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: TY -> [['float']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'DL', ';', 'VL', 'float']
+Matched Input: prog int id ; int id ; int id ; int id ; 
+Remaining Input: float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', 'DL', ';', 'VL']
+Matched Input: prog int id ; int id ; int id ; int id ; float 
+Remaining Input: id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: VL -> [['id', "VL'"]] 
+
+Elements of the stack: ['$', 'end', 'SL', 'DL', ';', "VL'", 'id']
+Matched Input: prog int id ; int id ; int id ; int id ; float 
+Remaining Input: id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', 'DL', ';', "VL'"]
+Matched Input: prog int id ; int id ; int id ; int id ; float id 
+Remaining Input: ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: VL' -> [['epsilon']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'DL', ';']
+Matched Input: prog int id ; int id ; int id ; int id ; float id 
+Remaining Input: ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', 'DL']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; 
+Remaining Input: int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: DL -> [['D', 'DL']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'DL', 'D']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; 
+Remaining Input: int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: D -> [['TY', 'VL', ';']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'DL', ';', 'VL', 'TY']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; 
+Remaining Input: int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: TY -> [['int']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'DL', ';', 'VL', 'int']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; 
+Remaining Input: int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', 'DL', ';', 'VL']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int 
+Remaining Input: id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: VL -> [['id', "VL'"]] 
+
+Elements of the stack: ['$', 'end', 'SL', 'DL', ';', "VL'", 'id']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int 
+Remaining Input: id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', 'DL', ';', "VL'"]
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id 
+Remaining Input: ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: VL' -> [['epsilon']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'DL', ';']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id 
+Remaining Input: ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', 'DL']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; 
+Remaining Input: id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: DL -> [['epsilon']] 
+
+Elements of the stack: ['$', 'end', 'SL']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; 
+Remaining Input: id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: SL -> [['S', 'SL']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'S']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; 
+Remaining Input: id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: S -> [['ES']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'ES']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; 
+Remaining Input: id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: ES -> [['id', ':=', 'E', ';']] 
+
+Elements of the stack: ['$', 'end', 'SL', ';', 'E', ':=', 'id']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; 
+Remaining Input: id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', ';', 'E', ':=']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id 
+Remaining Input: := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', ';', 'E']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := 
+Remaining Input: ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: E -> [['T', "E''"]] 
+
+Elements of the stack: ['$', 'end', 'SL', ';', "E''", 'T']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := 
+Remaining Input: ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: T -> [['F', "T''"]] 
+
+Elements of the stack: ['$', 'end', 'SL', ';', "E''", "T''", 'F']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := 
+Remaining Input: ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: F -> [['ic']] 
+
+Elements of the stack: ['$', 'end', 'SL', ';', "E''", "T''", 'ic']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := 
+Remaining Input: ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', ';', "E''", "T''"]
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic 
+Remaining Input: ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: T'' -> [['epsilon']] 
+
+Elements of the stack: ['$', 'end', 'SL', ';', "E''"]
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic 
+Remaining Input: ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: E'' -> [['epsilon']] 
+
+Elements of the stack: ['$', 'end', 'SL', ';']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic 
+Remaining Input: ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; 
+Remaining Input: id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: SL -> [['S', 'SL']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'S']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; 
+Remaining Input: id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: S -> [['ES']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'ES']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; 
+Remaining Input: id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: ES -> [['id', ':=', 'E', ';']] 
+
+Elements of the stack: ['$', 'end', 'SL', ';', 'E', ':=', 'id']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; 
+Remaining Input: id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', ';', 'E', ':=']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id 
+Remaining Input: := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', ';', 'E']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := 
+Remaining Input: ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: E -> [['T', "E''"]] 
+
+Elements of the stack: ['$', 'end', 'SL', ';', "E''", 'T']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := 
+Remaining Input: ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: T -> [['F', "T''"]] 
+
+Elements of the stack: ['$', 'end', 'SL', ';', "E''", "T''", 'F']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := 
+Remaining Input: ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: F -> [['ic']] 
+
+Elements of the stack: ['$', 'end', 'SL', ';', "E''", "T''", 'ic']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := 
+Remaining Input: ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', ';', "E''", "T''"]
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic 
+Remaining Input: ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: T'' -> [['epsilon']] 
+
+Elements of the stack: ['$', 'end', 'SL', ';', "E''"]
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic 
+Remaining Input: ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: E'' -> [['epsilon']] 
+
+Elements of the stack: ['$', 'end', 'SL', ';']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic 
+Remaining Input: ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; 
+Remaining Input: scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: SL -> [['S', 'SL']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'S']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; 
+Remaining Input: scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: S -> [['IOS']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'IOS']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; 
+Remaining Input: scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: IOS -> [['scan', 'id']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'id', 'scan']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; 
+Remaining Input: scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', 'id']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan 
+Remaining Input: id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id 
+Remaining Input: print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: SL -> [['S', 'SL']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'S']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id 
+Remaining Input: print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: S -> [['IOS']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'IOS']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id 
+Remaining Input: print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: IOS -> [['print', 'PE']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'PE', 'print']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id 
+Remaining Input: print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', 'PE']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print 
+Remaining Input: id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: PE -> [['E']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'E']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print 
+Remaining Input: id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: E -> [['T', "E''"]] 
+
+Elements of the stack: ['$', 'end', 'SL', "E''", 'T']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print 
+Remaining Input: id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: T -> [['F', "T''"]] 
+
+Elements of the stack: ['$', 'end', 'SL', "E''", "T''", 'F']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print 
+Remaining Input: id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: F -> [['id']] 
+
+Elements of the stack: ['$', 'end', 'SL', "E''", "T''", 'id']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print 
+Remaining Input: id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', "E''", "T''"]
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id 
+Remaining Input: if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: T'' -> [['epsilon']] 
+
+Elements of the stack: ['$', 'end', 'SL', "E''"]
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id 
+Remaining Input: if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: E'' -> [['epsilon']] 
+
+Elements of the stack: ['$', 'end', 'SL']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id 
+Remaining Input: if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: SL -> [['S', 'SL']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'S']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id 
+Remaining Input: if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: S -> [['IS']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'IS']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id 
+Remaining Input: if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: IS -> [['if', 'BE', 'then', 'SL', "IS'"]] 
+
+Elements of the stack: ['$', 'end', 'SL', "IS'", 'SL', 'then', 'BE', 'if']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id 
+Remaining Input: if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', "IS'", 'SL', 'then', 'BE']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if 
+Remaining Input: id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: BE -> [['AE', "BE'"]] 
+
+Elements of the stack: ['$', 'end', 'SL', "IS'", 'SL', 'then', "BE'", 'AE']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if 
+Remaining Input: id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: AE -> [['NE', "AE'"]] 
+
+Elements of the stack: ['$', 'end', 'SL', "IS'", 'SL', 'then', "BE'", "AE'", 'NE']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if 
+Remaining Input: id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: NE -> [['RE']] 
+
+Elements of the stack: ['$', 'end', 'SL', "IS'", 'SL', 'then', "BE'", "AE'", 'RE']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if 
+Remaining Input: id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: RE -> [['E', "RE'"]] 
+
+Elements of the stack: ['$', 'end', 'SL', "IS'", 'SL', 'then', "BE'", "AE'", "RE'", 'E']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if 
+Remaining Input: id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: E -> [['T', "E''"]] 
+
+Elements of the stack: ['$', 'end', 'SL', "IS'", 'SL', 'then', "BE'", "AE'", "RE'", "E''", 'T']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if 
+Remaining Input: id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: T -> [['F', "T''"]] 
+
+Elements of the stack: ['$', 'end', 'SL', "IS'", 'SL', 'then', "BE'", "AE'", "RE'", "E''", "T''", 'F']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if 
+Remaining Input: id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: F -> [['id']] 
+
+Elements of the stack: ['$', 'end', 'SL', "IS'", 'SL', 'then', "BE'", "AE'", "RE'", "E''", "T''", 'id']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if 
+Remaining Input: id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', "IS'", 'SL', 'then', "BE'", "AE'", "RE'", "E''", "T''"]
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id 
+Remaining Input: = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: T'' -> [['epsilon']] 
+
+Elements of the stack: ['$', 'end', 'SL', "IS'", 'SL', 'then', "BE'", "AE'", "RE'", "E''"]
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id 
+Remaining Input: = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: E'' -> [['epsilon']] 
+
+Elements of the stack: ['$', 'end', 'SL', "IS'", 'SL', 'then', "BE'", "AE'", "RE'"]
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id 
+Remaining Input: = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: RE' -> [['=', 'E']] 
+
+Elements of the stack: ['$', 'end', 'SL', "IS'", 'SL', 'then', "BE'", "AE'", 'E', '=']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id 
+Remaining Input: = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', "IS'", 'SL', 'then', "BE'", "AE'", 'E']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = 
+Remaining Input: ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: E -> [['T', "E''"]] 
+
+Elements of the stack: ['$', 'end', 'SL', "IS'", 'SL', 'then', "BE'", "AE'", "E''", 'T']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = 
+Remaining Input: ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: T -> [['F', "T''"]] 
+
+Elements of the stack: ['$', 'end', 'SL', "IS'", 'SL', 'then', "BE'", "AE'", "E''", "T''", 'F']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = 
+Remaining Input: ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: F -> [['ic']] 
+
+Elements of the stack: ['$', 'end', 'SL', "IS'", 'SL', 'then', "BE'", "AE'", "E''", "T''", 'ic']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = 
+Remaining Input: ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', "IS'", 'SL', 'then', "BE'", "AE'", "E''", "T''"]
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic 
+Remaining Input: then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: T'' -> [['epsilon']] 
+
+Elements of the stack: ['$', 'end', 'SL', "IS'", 'SL', 'then', "BE'", "AE'", "E''"]
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic 
+Remaining Input: then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: E'' -> [['epsilon']] 
+
+Elements of the stack: ['$', 'end', 'SL', "IS'", 'SL', 'then', "BE'", "AE'"]
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic 
+Remaining Input: then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: AE' -> [['epsilon']] 
+
+Elements of the stack: ['$', 'end', 'SL', "IS'", 'SL', 'then', "BE'"]
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic 
+Remaining Input: then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: BE' -> [['epsilon']] 
+
+Elements of the stack: ['$', 'end', 'SL', "IS'", 'SL', 'then']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic 
+Remaining Input: then id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', "IS'", 'SL']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then 
+Remaining Input: id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: SL -> [['S', 'SL']] 
+
+Elements of the stack: ['$', 'end', 'SL', "IS'", 'SL', 'S']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then 
+Remaining Input: id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: S -> [['ES']] 
+
+Elements of the stack: ['$', 'end', 'SL', "IS'", 'SL', 'ES']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then 
+Remaining Input: id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: ES -> [['id', ':=', 'E', ';']] 
+
+Elements of the stack: ['$', 'end', 'SL', "IS'", 'SL', ';', 'E', ':=', 'id']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then 
+Remaining Input: id := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', "IS'", 'SL', ';', 'E', ':=']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id 
+Remaining Input: := ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', "IS'", 'SL', ';', 'E']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := 
+Remaining Input: ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: E -> [['T', "E''"]] 
+
+Elements of the stack: ['$', 'end', 'SL', "IS'", 'SL', ';', "E''", 'T']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := 
+Remaining Input: ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: T -> [['F', "T''"]] 
+
+Elements of the stack: ['$', 'end', 'SL', "IS'", 'SL', ';', "E''", "T''", 'F']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := 
+Remaining Input: ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: F -> [['ic']] 
+
+Elements of the stack: ['$', 'end', 'SL', "IS'", 'SL', ';', "E''", "T''", 'ic']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := 
+Remaining Input: ic ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', "IS'", 'SL', ';', "E''", "T''"]
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic 
+Remaining Input: ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: T'' -> [['epsilon']] 
+
+Elements of the stack: ['$', 'end', 'SL', "IS'", 'SL', ';', "E''"]
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic 
+Remaining Input: ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: E'' -> [['epsilon']] 
+
+Elements of the stack: ['$', 'end', 'SL', "IS'", 'SL', ';']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic 
+Remaining Input: ; else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', "IS'", 'SL']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; 
+Remaining Input: else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: SL -> [['epsilon']] 
+
+Elements of the stack: ['$', 'end', 'SL', "IS'"]
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; 
+Remaining Input: else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: IS' -> [['else', 'SL', 'end']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', 'else']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; 
+Remaining Input: else if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else 
+Remaining Input: if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: SL -> [['S', 'SL']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', 'S']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else 
+Remaining Input: if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: S -> [['IS']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', 'IS']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else 
+Remaining Input: if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: IS -> [['if', 'BE', 'then', 'SL', "IS'"]] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', 'then', 'BE', 'if']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else 
+Remaining Input: if id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', 'then', 'BE']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if 
+Remaining Input: id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: BE -> [['AE', "BE'"]] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', 'then', "BE'", 'AE']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if 
+Remaining Input: id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: AE -> [['NE', "AE'"]] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', 'then', "BE'", "AE'", 'NE']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if 
+Remaining Input: id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: NE -> [['RE']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', 'then', "BE'", "AE'", 'RE']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if 
+Remaining Input: id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: RE -> [['E', "RE'"]] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', 'then', "BE'", "AE'", "RE'", 'E']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if 
+Remaining Input: id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: E -> [['T', "E''"]] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', 'then', "BE'", "AE'", "RE'", "E''", 'T']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if 
+Remaining Input: id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: T -> [['F', "T''"]] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', 'then', "BE'", "AE'", "RE'", "E''", "T''", 'F']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if 
+Remaining Input: id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: F -> [['id']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', 'then', "BE'", "AE'", "RE'", "E''", "T''", 'id']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if 
+Remaining Input: id < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', 'then', "BE'", "AE'", "RE'", "E''", "T''"]
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id 
+Remaining Input: < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: T'' -> [['epsilon']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', 'then', "BE'", "AE'", "RE'", "E''"]
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id 
+Remaining Input: < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: E'' -> [['epsilon']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', 'then', "BE'", "AE'", "RE'"]
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id 
+Remaining Input: < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: RE' -> [['<', 'E']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', 'then', "BE'", "AE'", 'E', '<']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id 
+Remaining Input: < ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', 'then', "BE'", "AE'", 'E']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < 
+Remaining Input: ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: E -> [['T', "E''"]] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', 'then', "BE'", "AE'", "E''", 'T']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < 
+Remaining Input: ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: T -> [['F', "T''"]] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', 'then', "BE'", "AE'", "E''", "T''", 'F']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < 
+Remaining Input: ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: F -> [['ic']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', 'then', "BE'", "AE'", "E''", "T''", 'ic']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < 
+Remaining Input: ic then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', 'then', "BE'", "AE'", "E''", "T''"]
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic 
+Remaining Input: then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: T'' -> [['epsilon']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', 'then', "BE'", "AE'", "E''"]
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic 
+Remaining Input: then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: E'' -> [['epsilon']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', 'then', "BE'", "AE'"]
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic 
+Remaining Input: then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: AE' -> [['epsilon']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', 'then', "BE'"]
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic 
+Remaining Input: then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: BE' -> [['epsilon']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', 'then']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic 
+Remaining Input: then id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then 
+Remaining Input: id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: SL -> [['S', 'SL']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', 'S']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then 
+Remaining Input: id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: S -> [['ES']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', 'ES']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then 
+Remaining Input: id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: ES -> [['id', ':=', 'E', ';']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', ';', 'E', ':=', 'id']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then 
+Remaining Input: id := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', ';', 'E', ':=']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id 
+Remaining Input: := fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', ';', 'E']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := 
+Remaining Input: fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: E -> [['T', "E''"]] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', ';', "E''", 'T']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := 
+Remaining Input: fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: T -> [['F', "T''"]] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', ';', "E''", "T''", 'F']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := 
+Remaining Input: fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: F -> [['fc']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', ';', "E''", "T''", 'fc']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := 
+Remaining Input: fc ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', ';', "E''", "T''"]
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc 
+Remaining Input: ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: T'' -> [['epsilon']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', ';', "E''"]
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc 
+Remaining Input: ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: E'' -> [['epsilon']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', ';']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc 
+Remaining Input: ; if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; 
+Remaining Input: if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: SL -> [['S', 'SL']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', 'S']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; 
+Remaining Input: if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: S -> [['IS']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', 'IS']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; 
+Remaining Input: if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: IS -> [['if', 'BE', 'then', 'SL', "IS'"]] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', "IS'", 'SL', 'then', 'BE', 'if']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; 
+Remaining Input: if id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', "IS'", 'SL', 'then', 'BE']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if 
+Remaining Input: id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: BE -> [['AE', "BE'"]] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', "IS'", 'SL', 'then', "BE'", 'AE']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if 
+Remaining Input: id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: AE -> [['NE', "AE'"]] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', "IS'", 'SL', 'then', "BE'", "AE'", 'NE']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if 
+Remaining Input: id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: NE -> [['RE']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', "IS'", 'SL', 'then', "BE'", "AE'", 'RE']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if 
+Remaining Input: id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: RE -> [['E', "RE'"]] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', "IS'", 'SL', 'then', "BE'", "AE'", "RE'", 'E']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if 
+Remaining Input: id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: E -> [['T', "E''"]] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', "IS'", 'SL', 'then', "BE'", "AE'", "RE'", "E''", 'T']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if 
+Remaining Input: id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: T -> [['F', "T''"]] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', "IS'", 'SL', 'then', "BE'", "AE'", "RE'", "E''", "T''", 'F']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if 
+Remaining Input: id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: F -> [['id']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', "IS'", 'SL', 'then', "BE'", "AE'", "RE'", "E''", "T''", 'id']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if 
+Remaining Input: id < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', "IS'", 'SL', 'then', "BE'", "AE'", "RE'", "E''", "T''"]
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id 
+Remaining Input: < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: T'' -> [['epsilon']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', "IS'", 'SL', 'then', "BE'", "AE'", "RE'", "E''"]
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id 
+Remaining Input: < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: E'' -> [['epsilon']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', "IS'", 'SL', 'then', "BE'", "AE'", "RE'"]
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id 
+Remaining Input: < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: RE' -> [['<', 'E']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', "IS'", 'SL', 'then', "BE'", "AE'", 'E', '<']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id 
+Remaining Input: < id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', "IS'", 'SL', 'then', "BE'", "AE'", 'E']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < 
+Remaining Input: id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: E -> [['T', "E''"]] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', "IS'", 'SL', 'then', "BE'", "AE'", "E''", 'T']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < 
+Remaining Input: id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: T -> [['F', "T''"]] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', "IS'", 'SL', 'then', "BE'", "AE'", "E''", "T''", 'F']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < 
+Remaining Input: id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: F -> [['id']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', "IS'", 'SL', 'then', "BE'", "AE'", "E''", "T''", 'id']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < 
+Remaining Input: id then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', "IS'", 'SL', 'then', "BE'", "AE'", "E''", "T''"]
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id 
+Remaining Input: then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: T'' -> [['epsilon']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', "IS'", 'SL', 'then', "BE'", "AE'", "E''"]
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id 
+Remaining Input: then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: E'' -> [['epsilon']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', "IS'", 'SL', 'then', "BE'", "AE'"]
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id 
+Remaining Input: then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: AE' -> [['epsilon']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', "IS'", 'SL', 'then', "BE'"]
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id 
+Remaining Input: then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: BE' -> [['epsilon']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', "IS'", 'SL', 'then']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id 
+Remaining Input: then id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', "IS'", 'SL']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then 
+Remaining Input: id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: SL -> [['S', 'SL']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', "IS'", 'SL', 'S']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then 
+Remaining Input: id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: S -> [['ES']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', "IS'", 'SL', 'ES']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then 
+Remaining Input: id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: ES -> [['id', ':=', 'E', ';']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', "IS'", 'SL', ';', 'E', ':=', 'id']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then 
+Remaining Input: id := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', "IS'", 'SL', ';', 'E', ':=']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id 
+Remaining Input: := fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', "IS'", 'SL', ';', 'E']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := 
+Remaining Input: fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: E -> [['T', "E''"]] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', "IS'", 'SL', ';', "E''", 'T']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := 
+Remaining Input: fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: T -> [['F', "T''"]] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', "IS'", 'SL', ';', "E''", "T''", 'F']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := 
+Remaining Input: fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: F -> [['fc']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', "IS'", 'SL', ';', "E''", "T''", 'fc']
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := 
+Remaining Input: fc else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: None
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', "IS'", 'SL', ';', "E''", "T''"]
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc 
+Remaining Input: else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: T'' -> [['epsilon']] 
+
+Elements of the stack: ['$', 'end', 'SL', 'end', 'SL', "IS'", 'SL', "IS'", 'SL', ';', "E''"]
+Matched Input: prog int id ; int id ; int id ; int id ; float id ; int id ; id := ic ; id := ic ; scan id print id if id = ic then id := ic ; else if id < ic then id := fc ; if id < id then id := fc 
+Remaining Input: else if id < id then id := fc ; print str end scan id end end while id > fc do id := id - ic end end while id > ic do id := id + ic ; id := fc ; if id = ic then id := ic ; end end end $ 
+Production Rule applying: E'' -> [['epsilon']] 
+
+Does not match: ;withToken{tokenName='else', value='else'}
+The given input text is REJECTED.
